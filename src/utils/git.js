@@ -28,7 +28,7 @@ const gitUtils = (logger) => ({
         return 'error';
       }
 
-      execSync(`git branch -d ${branch}`);
+      execSync(`git branch -D ${currentBranch}`);
     }
 
     return 'done';
